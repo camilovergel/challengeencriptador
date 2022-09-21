@@ -1,0 +1,335 @@
+/* challengeencriptador  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* definir paleta de colores */
+:root {
+    --principal: #0A3871;
+    --secundario: #fff;
+    --fondo: #E5E5E5;
+    --img: filter: invert(19%) sepia(79%) saturate(1137%) hue-rotate(184deg) brightness(89%) contrast(100%);
+}
+body {
+    color: --principal;
+    font-family: 'Inter', sans-serif;
+    background: var(--fondo);
+    display: grid;
+}
+main {
+    position: absolute;
+}
+img {
+    color: var(--img);
+}
+.logo {
+    position: absolute;
+    width: 31.09px;
+    height: 48px;
+    top: 30px;
+    left: 44px;
+}
+.textarea {
+    position: relative;
+    width: 577px;
+    height: 300px;
+    top: 100px;
+    left: 200px;
+    border: none;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: var(--principal);
+}
+.alert {
+    position: relative;
+    top: 170px;
+    left: 170px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+i {
+    margin: 0 10px;
+    color: var(--principal);
+}
+.parr {
+    line-height: 16px;
+    color: var(--principal);
+}
+
+/* diseño, tamaños y colores de los botones */
+.div_button {
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    display: flex;
+}
+.div_button > button {
+    width: 300px;
+    height: 60px;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 22px;
+    display: flex;
+    border: 1px solid var(--principal);
+    /* texto dentro de buttons */
+    justify-content: center;
+    font-size: medium;
+}
+.encriptar {
+    background: var(--principal);
+    color: var(--secundario);
+}
+.encriptar:hover {
+    background: var(--secundario);
+    color: var(--principal);
+}
+.desencriptar:hover {
+    background: var(--secundario);
+    color: var(--principal);
+}
+.desencriptar {
+    background: var(--fondo);
+    margin: 0px 24px;
+    color: var(--principal);
+}
+aside {
+    position: relative;
+    background: var(--secundario);
+    width: 330px;
+    height: 550px;
+    margin-top: 30px;
+    margin-left: 990px;
+    border-radius: 32px;
+    color: var(--principal);
+    box-shadow: 3px 3px 3px #0a387136;
+}
+.container_no_found {
+    margin: 100px auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.container_no_found > img {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.container_no_found > p {
+    position: relative;
+    margin: 10px;
+    top: 10px;
+}
+.texto_no_encontrado {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 800;
+}
+.ingresar_texto {
+    font-size: 12px;
+    text-align: center;
+}
+.textarea-resultado {
+    position: absolute;
+    background: var(--secundario);
+    width: 90%;
+    height: 90%;
+    left: 15px;
+    right: 15px;
+    top: 30px;
+    border: none;
+    text-align: justify;
+
+    font-size: 25px;
+    display: none;
+}
+aside > button {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    border: 1px solid var(--principal);
+    /* texto dentro de buttons */
+    justify-content: center;
+    font-size: small;
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+.copiar {
+    background: var(--principal);
+    color: var(--secundario);
+}
+.copiar:hover {
+    background: var(--secundario);
+    color: var(--principal);
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: var(--principal);
+    color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+.footer > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > div > ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.footer > div > ul > li {
+    margin: 0 10px;
+    font-size: 16px;
+}
+.derechos {
+    list-style: none;
+    text-decoration: none;
+    color: #4d90e2;
+}
+.icons > li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+}
+.icons > li > a {
+    text-decoration: none;
+    color: var(--secundario);
+}
+.icons > li > a > i{
+    color: var(--secundario);
+}
+/* responsive tabet */
+@media only screen and (max-width: 768px) {
+    main {
+        left: 0;
+        right: 0;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 4%;
+        height: auto;
+        left: 48%;
+        right: 48%;
+    }
+    .textarea {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: auto;
+    }
+    .alert {
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        left: auto;
+    }
+    i {
+        margin-left: 40px;
+    }
+    .parr {
+        line-height: 16px;
+    }
+    
+    /* diseño, tamaños y colores de los botones */
+    .div_button {
+        padding-left: 15px;
+        width: 100%;
+        position: absolute;
+        top: 530px;
+        left: auto;
+        right: auto;
+        justify-content: center;
+    }
+    .div_button > button {
+        width: 42%;
+        height: 50px;
+        padding: auto;
+    }
+    .encriptar {
+        padding: auto;
+        line-height: 8px;
+    
+    }
+    .desencriptar {
+        padding: auto;
+        line-height: 8px;
+    }
+    aside {
+        top: 280px;
+        left: auto;
+        right: auto;
+        margin: auto;
+        width: 90%;
+        height: 115%;
+    }
+    .container_no_found {
+        margin: 35px auto;
+    }
+    .container_no_found > img {
+        display: none;
+    }
+    .textarea-resultado {
+        position: relative;
+        width: 90%;
+        height: auto;
+        left: 5%;
+        right: 5%;
+        border: none;
+        display: none;
+    }
+    .footer {
+        position: absolute;
+        top: 800px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        
+    }
+    .footer > div {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer > div > ul {
+        align-items: center;
+        display: block;
+    }
+    .footer > div > ul > li {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .icons > li {
+        display: block;
+    }
+    .icons > li > a {
+        text-decoration: none;
+        color: var(--secundario);
+    }
+    .icons > li > a > i{
+        color: var(--secundario);
+    }
+}

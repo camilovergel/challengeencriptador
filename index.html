@@ -1,0 +1,103 @@
+ <!--    challengeencriptador  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link rel="stylesheet" href="reset.css" -->                   
+    
+    <script src="https://kit.fontawesome.com/b0ab042d33.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b0ab042d33.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">              
+    <title>encriptador</title>
+</head>
+ 
+
+
+<header>
+        <div>
+            <img class="logo" id="logo" src = "Images/Logo.png" alt="logo alura letra -a ">
+        </div> 
+</header>
+
+<body>
+
+    <main>  
+      
+        <textarea name="texto-a-encriptar" class="textarea" id="textarea" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                
+        <div class="alert"> 
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p class="parr">Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="div_button">
+            <button id="encriptar" class="encriptar" >Encriptar </button>
+            <button id="desencriptar" class="desencriptar" >Desencriptar</button>
+<!--
+            <button id="encriptar" class="encriptar" onclick="btnEncriptar()">Encriptar </button>
+            <button id="desencriptar" class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+-->
+        </div>
+    </main>
+        
+    <aside class="aside" id="aside">
+        <div class="container_no_found">
+            <img src="Images/Muñeco.png" alt="muñeco" class="finder" id="finder">
+            <p class="texto_no_encontrado">Ningún mensaje fue encontrado</p>
+            <p class="ingresar_texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <!--texto-encriptado -->
+        <textarea name="texto-encriptado" class="textarea-resultado" id="textarea-resultado" cols="30" rows="10" placeholder="Texto encriptado"></textarea>
+        <button  id="copiar" class="copiar" >Copiar</button>
+        <!-- <button  id="copiar" class="copiar" onclick="copiar()" >  Copiar     </button> -->
+    </aside>
+
+
+    <footer class="footer">
+        <div class="author">
+            <ul class="menu">
+                <li>Creado por: Camilo Vergel &copy;</li>
+                <li>Todos los derechos reservados.</li>
+                <li>Diseño <a href="https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo-1---L%C3%B3gica?node-id=0%3A1" class="derechos" target="_blank">Alura LATAM</a></li>
+            </ul>
+        </div>
+        <div class="Social">
+            <ul class="icons">
+                <li><a href="https://github.com/camilovergel" target=_blank><i class="fa-brands fa-github"></i>  GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/camilovergelblanco/" target=_blank><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script src="script.js">  
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<!-- # Elementos principales de la página
+
+- Título de su sitio web
+- Campo para el texto que va a ser encriptado/desencriptado
+- Un botón para encriptar
+- Un botón para desencriptar
+- Área para mostrar el texto encriptado/desencriptado.
+
+# Extra!
+Un rodapie  con los datos de la persona que desarrolló el sitio web!
+*/ -->
+
+
+<!--     ************************************************************************          -->
+<!-- se inicia con ! que ofrecera una estructura basica html. -->
